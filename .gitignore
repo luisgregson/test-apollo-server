@@ -1,0 +1,77 @@
+# Logs
+logs
+*.log
+
+
+server/node_modules
+client/**/node_modules
+node_modules/
+
+client/**/.cache
+
+# Users Environment Variables
+.lock-wscript
+
+# IDEs and editors (shamelessly copied from @angular/cli's .gitignore)
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.vscode/
+.tern-port
+
+# IDE - VSCode
+.vscode/*
+*.rej
+
+### Linux ###
+*~
+
+### OSX ###
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Env files
+.env
+.envrc
+
+# generated prisma
+server-prisma/generated/
+**/shared/prisma-client
+
+# Compiled...
+client/**/dist
+client/management/src/validation
+server-services/build
+server-services/src/**/definitions/generated
+backup
+
+# Import files
+.import

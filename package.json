@@ -1,0 +1,11 @@
+{
+  "name": "test-apollo-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Luis Gregson <luis.gregson@korelogic.co.uk>",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server": "^2.10.0",
+    "graphql": "^14.6.0"
+  }
+}
