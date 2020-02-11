@@ -8,7 +8,7 @@ const typeDefs = gql`
   }
 
   type Query {
-    uploads: [File]
+    ping: String!
   }
 
   type Mutation {
@@ -18,7 +18,9 @@ const typeDefs = gql`
 
 const resolvers = {
   Query: {
-    uploads: (parent, args) => {},
+    ping: () => {
+      return 'ping!'
+    },
   },
   Mutation: {
     singleUpload: (parent, args) => {
