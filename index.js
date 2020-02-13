@@ -12,6 +12,7 @@ const typeDefs = gql`
   }
 
   type Mutation {
+    slowMutation(someString: String!): String!
     singleUpload(file: Upload!): String!
   }
 `;
@@ -23,6 +24,11 @@ const resolvers = {
     },
   },
   Mutation: {
+    slowMutation: async () => {
+      return await new Promise((res) => {
+        setTimeout(() => res('Wow, that took like 5 seconds'), 5000)
+      })
+    },
     singleUpload: (parent, args) => {
       return args.file.then(file => {
         //Contents of Upload scalar: https://github.com/jaydenseric/graphql-upload#class-graphqlupload
